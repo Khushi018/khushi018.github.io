@@ -54,12 +54,12 @@
                 <div class="text-2" id="user-detail-name">Khushi Gupta</div>
                 <div class="text-3">And I'm a <span class="typing"></span></div>
                
-                <div id="resume-button-2">                  
+                <div id="resume-button-2">
 
-                    <a href="./images/KhushiGupta-Resume.pdf" class="Drivegoogle" download="KhushiGupta-Resume"
-                        id="resume-link-2" 
-                        onclick=
-                        "window.open('https://drive.google.com/file/d/1VwmS_l0MKpy91uz2bdvZyCSbhQqbA4i7/view?usp=sharing')">Resume</a>
+                   
+
+                    <a href="" class="Drivegoogle" 
+                        id="resume-link-2" onclick="window.open('https://drive.google.com/file/d/1bKiuh8PflG8Jh_gvx8fx8_L66foCmH0r/view?usp=sharing')">Resume</a>
                  </div>
             </div>
             <div>
@@ -265,9 +265,9 @@
                 <div class="project-card">
                     <div class="box">
                         <img src="./images/questyme.png" alt="questyme">
-                        <div class="project-title">QuesTyme interview scheduler</div>
+                        <div class="project-title">QuesTyme Interview scheduler</div>
                         <p class="project-description">The application provides the features of interview schedulling and one on one session and other required func..</p>
-                        <p class="project-tech-stack">Tech Stack: Java | MySql | SpringBoot | Security | React </p>
+                        <p class="project-tech-stack"> Java | MySql | SpringBoot | Security | </p>
                         <div class="repo-links">
                             <div class="repo-div">
                                 <span><a class="project-github-link"
@@ -476,6 +476,44 @@
     </footer>
 
     <script src="index.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 
 </html>
